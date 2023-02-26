@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "name": "Custom Raster Tiles",
+  "center": [0, 0],
+  "zoom": 0,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "tiles": {
+      "type": "raster",
+      "url": "pmtiles://http://127.0.0.1:8080/data/osm-taipei-city.pmtiles",
+      "tileSize": 256,
+      "attribution": "&copy; <a href=\"https://github.com/YuChunTsao\" target=\"_blank\">YuChunTsao</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap contributors</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "osm-taipei-raster-tiles",
+      "type": "raster",
+      "source": "tiles",
+      "minzoom": 0,
+      "maxzoom": 14
+    }
+  ]
+}
